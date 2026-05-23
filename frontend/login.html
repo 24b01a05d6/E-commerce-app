@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+  <div class="login-box">
+    
+    <h1>Login</h1>
+
+    <!-- USERNAME -->
+    <input type="text" id="username" placeholder="Enter username">
+
+    <!-- ROLE -->
+    <select id="role">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+
+    <!-- BUTTON -->
+    <button onclick="login()">Login</button>
+
+  </div>
+</div>
+
+<!-- ✅ SCRIPT MUST BE HERE (BOTTOM LO) -->
+<script>
+function login() {
+  const username = document.getElementById("username").value;
+  const role = document.getElementById("role").value;
+
+  console.log(username, role); // debug
+
+  if (!username) {
+    alert("Enter username!");
+    return;
+  }
+
+  localStorage.setItem("user", username);
+  localStorage.setItem("role", role);
+
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

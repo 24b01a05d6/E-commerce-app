@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1e293b;
+}
+
+/* LOGIN CENTER */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* INPUTS */
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+}
+
+/* BUTTON */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: cyan;
+  cursor: pointer;
+}
+
+/* PRODUCTS */
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+/* CART */
+.cart-container {
+  text-align: center;
+}
+
+/* CHECKOUT */
+.checkout-btn {
+  display: block;
+  margin: 20px auto;
+}

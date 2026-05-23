@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🛒 My Store</h1>
+
+  <div class="user-info">
+    <span id="welcome"></span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<h2>Products</h2>
+<div id="products" class="product-container"></div>
+
+<h2>Cart</h2>
+<div id="cart" class="cart-container"></div>
+
+<button class="checkout-btn" onclick="checkout()">Checkout</button>
+
+<div id="adminPanel" style="display:none;">
+  <h3>Add Product</h3>
+  <input type="text" id="pname" placeholder="Product Name">
+  <input type="number" id="pprice" placeholder="Price">
+  <button onclick="addProduct()">Add Product</button>
+</div>
+
+<script src="script.js"></script>
+</body>
